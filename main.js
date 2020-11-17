@@ -13,7 +13,24 @@ const app = () => {
 
     //Get the length of outline
     const outlineLength = outline.getTotalLength();
-    console.log(outlineLength)
+    console.log(outlineLength);
+
+    //Get repeat button
+    const repeatfunction = () => {
+        if(video.play()) {
+            video.currentTime;
+            console.log(video.currentTime);
+            video.currentTime = 0;
+            console.log(video.currentTime);
+            console.log(song.currentTime);
+            song.currentTime = 0;
+            console.log(song.currentTime);
+        };
+    };
+
+    const repeatbutton = document.querySelector('.repeat'); // select button
+    repeatbutton.addEventListener('click', repeatfunction); // Buttonrepeat add eventlistener click for img repeat
+
 
     // Duration
     let fakeDuration = 600;
@@ -86,6 +103,5 @@ const app = () => {
 
 
 }
-    
-
+//run
 app();

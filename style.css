@@ -20,6 +20,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .player-container {
@@ -85,4 +87,11 @@ video {
 
 .sound-picker button img {
   height: 100%;
+}
+
+.repeat {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
 }
